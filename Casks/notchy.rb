@@ -12,14 +12,16 @@ cask "notchy" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Notchy.app"
 
   # Notchy isn't notarized by Apple yet, so without this macOS would refuse to open it the first time
   # and you'd have to find "Open Anyway" in System Settings. This is the same thing the curl installer does.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Notchy.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Notchy.app"],
+        writable_paths: ["{{appdir}}/Notchy.app"]
   end
 
   uninstall quit: "dev.notchy.Notchy"
