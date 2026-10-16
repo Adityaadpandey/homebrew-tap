@@ -55,10 +55,9 @@
   .shot { display: block; width: 100%; height: auto; border-radius: clamp(16px, 2.4vw, 30px); box-shadow: 0 50px 100px -40px rgba(60,30,90,.45), 0 0 0 1px rgba(0,0,0,.05); background: #1a1030; }
 
   /* ---------- the hero film: the real card, on the real desktop, playing its own story ---------- */
-  .stage-wrap { margin-top: 40px; overflow: hidden; padding: 0 0 60px; position: relative; }
-  .stage-wrap::before { content: ""; position: absolute; left: 50%; top: 25%; width: 76%; height: 52%; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(232,120,60,.4), rgba(150,60,150,.16) 60%, transparent); filter: blur(60px); }
+  .stage-wrap { margin-top: 40px; overflow: hidden; padding: 0 0 100px; position: relative; }
   .stage { position: relative; width: max(calc(100% - 24px), 780px); max-width: 1180px; margin: 0 0 0 50%; transform: translateX(-50%); container-type: inline-size; }
-  .screen { position: relative; aspect-ratio: 100 / 44; border-radius: 26px; overflow: hidden; border: 1px solid rgba(255,255,255,.22); background: radial-gradient(55% 70% at 0% 100%, rgba(40,20,90,.55), transparent 70%), linear-gradient(112deg, #2d2370 0%, #5d3382 34%, #a2578b 66%, #ee9a62 100%); box-shadow: 0 60px 120px -40px rgba(60,20,90,.65), 0 30px 60px -30px rgba(0,0,0,.5); }
+  .screen { position: relative; aspect-ratio: 100 / 44; border-radius: 26px; overflow: hidden; border: 0; background: linear-gradient(165deg, #3f5f8a 0%, #5d86b0 45%, #8fb0cf 100%); box-shadow: 0 50px 90px -40px rgba(20,35,60,.45), 0 0 0 1px rgba(0,0,0,.08); }
   .menubar { position: absolute; inset: 0 0 auto 0; height: 3cqw; min-height: 24px; display: flex; align-items: center; justify-content: space-between; padding: 0 1.8cqw; background: rgba(255,255,255,.16); backdrop-filter: blur(12px); font: 500 max(10px, 1.18cqw) var(--sans); color: #fff; }
   .menubar .l, .menubar .r { display: flex; align-items: center; gap: 1.8cqw; }
   .menubar .r svg { height: max(10px, 1.1cqw); width: auto; fill: #fff; }
