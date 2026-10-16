@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Notchy</title>
-<meta name="description" content="Keep working. Notchy tells you when Claude needs you or is done, right in the MacBook notch.">
+<title>Bubble</title>
+<meta name="description" content="Keep working. Bubble tells you when Claude needs you or is done, right in the MacBook notch.">
 <link rel="icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,7 +174,7 @@
 
 <nav>
   
-    <a class="brand" href="#"><img src="assets/icon.png" alt="">Notchy</a>
+    <a class="brand" href="#"><img src="assets/icon.png" alt="">Bubble</a>
     <div class="nav-c">
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
@@ -182,24 +182,24 @@
       <a href="#faq">FAQ</a>
     </div>
     
-      <a class="gh" href="https://github.com/Adityaadpandey/notchy" aria-label="Notchy on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0012 .5z"/></svg></a>
+      <a class="gh" href="https://github.com/Adityaadpandey/bubble" aria-label="Bubble on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0012 .5z"/></svg></a>
       <a class="btn" href="#get">Install</a>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <h1>Keep working.<br><span class="quiet">Notchy tells you.</span></h1>
+    <h1>Keep working.<br><span class="quiet">Bubble tells you.</span></h1>
     <p class="lede">When Claude needs a yes or finishes, it shows up in your MacBook notch. Reply from there.</p>
     <div class="cmd">
       <span class="d">$</span>
-      <code>curl -fsSL https://raw.githubusercontent.com/Adityaadpandey/notchy/main/install.sh | bash</code>
+      <code>curl -fsSL https://raw.githubusercontent.com/Adityaadpandey/bubble/main/install.sh | bash</code>
       <button class="copy" type="button">Copy</button>
     </div>
-    <p class="sub">Paste it in Terminal and you are connected. Or <code>brew install --cask adityaadpandey/tap/notchy</code></p>
+    <p class="sub">Paste it in Terminal and you are connected. Or <code>brew install --cask adityaadpandey/tap/bubble</code></p>
   </div>
 </header>
 
-<div class="stage-wrap" aria-label="Animation: Claude Code waits for permission, Notchy opens the question from the notch, one click answers it, then the notch says it finished">
+<div class="stage-wrap" aria-label="Animation: Claude Code waits for permission, Bubble opens the question from the notch, one click answers it, then the notch says it finished">
   <div class="stage">
     <div class="screen" id="screen">
       <div class="menubar">
@@ -215,21 +215,21 @@
         <div class="dots"><b></b><b></b><b></b></div>
         <div><span class="or wait">✱ Swiftly building… (12s)</span><span class="or done">✻ Built in 14s</span></div>
         <div>● Bash(make install)</div>
-        <div><span class="g wait">&nbsp;&nbsp;⎿&nbsp; Waiting for permission…</span><span class="gr done">&nbsp;&nbsp;⎿&nbsp; Installed. Notchy is ready ✓</span></div>
+        <div><span class="g wait">&nbsp;&nbsp;⎿&nbsp; Waiting for permission…</span><span class="gr done">&nbsp;&nbsp;⎿&nbsp; Installed. Bubble is ready ✓</span></div>
       </div>
       <div class="notch" id="notch">
         <div class="card">
-          <div class="hd"><span class="sp">✦</span><span class="t">Chat (claude) · notchy</span>
+          <div class="hd"><span class="sp">✦</span><span class="t">Chat (claude) · bubble</span>
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 14l5-5M11 9h4v4"/></svg>
             <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></div>
-          <div class="cmdbox">Bash command<br>make install<br>Build Notchy and copy it into Applications</div>
+          <div class="cmdbox">Bash command<br>make install<br>Build Bubble and copy it into Applications</div>
           <div class="qq">Do you want to proceed?</div>
           <div class="opt sel" id="yes">Yes</div>
-          <div class="opt">Yes, and don't ask again for make commands in ~/Projects/notchy</div>
+          <div class="opt">Yes, and don't ask again for make commands in ~/Projects/bubble</div>
           <div class="opt no">No</div>
           <div class="reply"><span>Reply to Claude…</span><i>↑</i></div>
         </div>
-        <div class="fin"><i>✓</i><div><b>Chat (claude) · notchy</b><span>Finished. Your build is ready.</span></div></div>
+        <div class="fin"><i>✓</i><div><b>Chat (claude) · bubble</b><span>Finished. Your build is ready.</span></div></div>
       </div>
       <svg class="cursor" id="cursor" viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2L9.5 20z" fill="#fff" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/></svg>
     </div>
@@ -240,40 +240,40 @@
 <section class="sec" id="how">
   <div class="wrap">
     <h2>Set up in a minute.</h2>
-    <p class="lead">Paste one line. Notchy opens and walks you through the rest.</p>
+    <p class="lead">Paste one line. Bubble opens and walks you through the rest.</p>
     <div class="steps">
-      <div class="step"><em>1</em><h3>Paste one line</h3><p>In Terminal. Notchy installs itself and opens.</p></div>
+      <div class="step"><em>1</em><h3>Paste one line</h3><p>In Terminal. Bubble installs itself and opens.</p></div>
       <div class="step"><em>2</em><h3>Allow your terminal</h3><p>Click <code>Allow</code> on the welcome card, then OK when macOS asks.</p></div>
       <div class="step"><em>3</em><h3>Keep working</h3><p>From now on, Claude comes to your notch when it needs you.</p></div>
     </div>
-    <img class="pic" loading="lazy" src="assets/onboarding.jpg" width="2480" height="600" alt="Notchy's welcome card hanging from the notch, asking to control iTerm2 and Terminal">
+    <img class="pic" loading="lazy" src="assets/onboarding.jpg" width="2480" height="600" alt="Bubble's welcome card hanging from the notch, asking to control iTerm2 and Terminal">
   </div>
 </section>
 
 <section class="sec grey" id="features">
   <div class="wrap">
     <h2>Everything Claude does. Right in the notch.</h2>
-    <p class="lead">You stay in the app you are in. Notchy does the checking.</p>
+    <p class="lead">You stay in the app you are in. Bubble does the checking.</p>
     <div class="bento">
       <div class="tile t-answer">
         <h3>Answer without switching</h3>
         <p>Claude asks to run a command? You see exactly what, and click Yes, Yes and don't ask again, or No. Your work never stops.</p>
-        <div class="vis"><div class="crop ask" role="img" aria-label="The Notchy card open from the notch"></div></div>
+        <div class="vis"><div class="crop ask" role="img" aria-label="The Bubble card open from the notch"></div></div>
       </div>
       <div class="tile t-done">
         <h3>Know when it is done</h3>
         <p>A card opens the moment Claude finishes. And a nudge if a question waits too long.</p>
-        <div class="vis"><div class="ping"><i>✓</i><div><b>Chat (claude) · notchy</b><span>Finished. Your build is ready.</span></div></div></div>
+        <div class="vis"><div class="ping"><i>✓</i><div><b>Chat (claude) · bubble</b><span>Finished. Your build is ready.</span></div></div></div>
       </div>
       <div class="tile t-usage">
         <h3>Track your usage</h3>
         <p>5-hour and weekly limits for Claude, Codex and Command Code, and when they reset.</p>
-        <div class="vis"><div class="crop use" role="img" aria-label="Usage limits in the Notchy dashboard"></div></div>
+        <div class="vis"><div class="crop use" role="img" aria-label="Usage limits in the Bubble dashboard"></div></div>
       </div>
       <div class="tile">
         <h3>See every tab</h3>
         <p>Hover the notch. Waiting or working, at a glance.</p>
-        <div class="vis"><div class="tabs"><div><i class="w"></i><p style="margin:0;color:#fff;max-width:none">notchy<span>Do you want to proceed?</span></p></div><div><i></i><p style="margin:0;color:#fff;max-width:none">api<span>Refactoring… 1m 12s</span></p></div></div></div>
+        <div class="vis"><div class="tabs"><div><i class="w"></i><p style="margin:0;color:#fff;max-width:none">bubble<span>Do you want to proceed?</span></p></div><div><i></i><p style="margin:0;color:#fff;max-width:none">api<span>Refactoring… 1m 12s</span></p></div></div></div>
       </div>
       <div class="tile">
         <h3>Keyboard first</h3>
@@ -303,33 +303,33 @@
   <div class="wrap">
     <h2>Questions.</h2>
     <div class="faq">
-      <details><summary>Is it free?</summary><p>Yes. Notchy is free and open source under the MIT licence.</p></details>
-      <details><summary>Can it see my passwords?</summary><p>No. Anything asking for a password stays in the terminal. Everything Notchy reads stays on your Mac.</p></details>
-      <details><summary>What if my Mac has no notch?</summary><p>Notchy hangs from the top middle of your screen instead.</p></details>
+      <details><summary>Is it free?</summary><p>Yes. Bubble is free and open source under the MIT licence.</p></details>
+      <details><summary>Can it see my passwords?</summary><p>No. Anything asking for a password stays in the terminal. Everything Bubble reads stays on your Mac.</p></details>
+      <details><summary>What if my Mac has no notch?</summary><p>Bubble hangs from the top middle of your screen instead.</p></details>
       <details><summary>What do I need?</summary><p>macOS 14 Sonoma or later, and iTerm2, Terminal, tmux, kitty or WezTerm.</p></details>
-      <details><summary>How do I update or remove it?</summary><p>Run the install line again to update, or use <code>brew upgrade --cask notchy</code>. To remove it, run <code>brew uninstall --cask notchy</code>.</p></details>
+      <details><summary>How do I update or remove it?</summary><p>Run the install line again to update, or use <code>brew upgrade --cask bubble</code>. To remove it, run <code>brew uninstall --cask bubble</code>.</p></details>
     </div>
   </div>
 </section>
 
 <section class="sec final" id="get">
   <div class="wrap">
-    <img src="assets/icon.png" alt="Notchy app icon">
-    <h2>Get Notchy.</h2>
+    <img src="assets/icon.png" alt="Bubble app icon">
+    <h2>Get Bubble.</h2>
     <p class="lead">One line in Terminal. You are connected.</p>
     <div class="cmd">
       <span class="d">$</span>
-      <code>curl -fsSL https://raw.githubusercontent.com/Adityaadpandey/notchy/main/install.sh | bash</code>
+      <code>curl -fsSL https://raw.githubusercontent.com/Adityaadpandey/bubble/main/install.sh | bash</code>
       <button class="copy" type="button">Copy</button>
     </div>
-    <p class="sub">Or with Homebrew: <code>brew install --cask adityaadpandey/tap/notchy</code></p>
+    <p class="sub">Or with Homebrew: <code>brew install --cask adityaadpandey/tap/bubble</code></p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>Notchy · MIT licence</span>
-    <span><a href="https://github.com/Adityaadpandey/notchy">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/Adityaadpandey/notchy/releases/latest">Releases</a></span>
+    <span>Bubble · MIT licence</span>
+    <span><a href="https://github.com/Adityaadpandey/bubble">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/Adityaadpandey/bubble/releases/latest">Releases</a></span>
   </div>
 </footer>
 
