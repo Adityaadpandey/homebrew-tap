@@ -1,11 +1,11 @@
 # Homebrew tap
 
 ```sh
-brew install --cask adityaadpandey/tap/notchy
+brew install --cask adityaadpandey/tap/bubble
 ```
 
 | Cask | What it is |
 |---|---|
-| [notchy](Casks/notchy.rb) | [Notchy](https://github.com/Adityaadpandey/notchy) answers your terminal's prompts from the MacBook notch |
+| [bubble](Casks/bubble.rb) | [Bubble](https://github.com/Adityaadpandey/bubble) answers your terminal's prompts from the MacBook notch |
 
-Update with `brew upgrade --cask notchy`. The cask is bumped automatically each time Notchy is released.
+Update with `brew upgrade --cask bubble`. The cask is bumped automatically each time Bubble is released.
