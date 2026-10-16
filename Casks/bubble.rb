@@ -1,6 +1,6 @@
 cask "bubble" do
-  version "1.3"
-  sha256 "2dabd36b00c888b0300fee7470ac5a0a37633322aa89f97b3da0917a571d37e3"
+  version "1.4"
+  sha256 "bae45d094a2ab76b0b627976da1183ce6893be9a36509a94c207b9769a83ef30"
 
   url "https://github.com/Adityaadpandey/bubble/releases/download/v#{version}/Bubble.zip"
   name "Bubble"
